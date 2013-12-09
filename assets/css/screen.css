@@ -135,7 +135,7 @@ h2.blog-description {
   color: #95a5a6;
 }
 h1.post-title {
-  font-size: 2em;
+  font-size: 3em;
 }
 header.article-header,
 header.page-header {
@@ -228,10 +228,10 @@ h1.blog-title a:hover {
   color: #3498db;
   text-decoration: none;
 }
-h2 {
+.post-content h2 {
   font-family: "Roboto Slab", "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   margin-top: 2em;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 400;
   color: #151515;
 }
