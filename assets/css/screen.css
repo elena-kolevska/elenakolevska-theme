@@ -66,9 +66,8 @@ pre {
 }
 p code {
   font-size: .8em;
-  line-height: 1.2em;
   font-family: "Consolas", Courier, monospace;
-  padding: 0.6em;
+  padding: 0.5em;
   white-space: pre;
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
