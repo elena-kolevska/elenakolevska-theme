@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300);
 /* === Core Styles === */
 body {
-  color: #7f8c8d;
+  color: #3e3e3e;
   font-size: 15px;
   font-weight: 100;
   line-height: 1.6em;
@@ -320,7 +320,7 @@ a.archive-link {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
-  color: #7f8c8d;
+  color: #3e3e3e;
   text-align: center;
   padding: 0.5em 0;
 }
