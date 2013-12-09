@@ -8,17 +8,17 @@
 
 <main class="content" role="main">
 
-    <article class="{{post_class}}">
+    <article class="{{post_class}}" itemscope itemtype="http://schema.org/Article">
 
         {{#post}}
 
         <header>
         {{#if tags}}<div class="post-meta tags">Posted in {{tags}}</div>{{/if}}
-        <h1 class="post-title">{{{title}}}</h1>
-        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></div>
+        <h1 class="post-title" itemprop="headline">{{{title}}}</h1>
+        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">{{date format="dddd, MMMM DD, YYYY"}}</time></div>
         </header>
 
-        <section class="post-content">
+        <section class="post-content" itemscope itemprop="articleBody">
             {{content}}
         </section>
 
@@ -42,10 +42,15 @@
 
             {{#if author}}
             <section class="author">
-                <img src="{{author.image}}" class="userimage" alt="{{author.name}}" />
-                <p class="attr">Author</p>
-                <h4><a href="{{author.website}}">{{author.name}}</a></h4>
-                <p class="bio">{{author.bio}}</p>
+                <address itemscope itemtype="http://schema.org/Person">
+                    <img src="{{author.image}}" class="userimage" alt="{{author.name}}" itemprop="image"/>
+                    <p class="attr">Author</p>
+                    <h4 itemprop="author">{{author.name}}</h4>
+                    <p class="bio">
+                        <a href="{{author.website}}" itemprop="url">{{author.website}}</a>
+                    </p>
+                    <p class="bio">{{author.bio}}</p>
+                </address>
             </section>
             {{/if}}
 
@@ -57,7 +62,7 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = '%YOURDISQUSNAME%';
+        var disqus_shortname = 'blogelenakolevska';
         
         /* * * DON'T EDIT BELOW THIS LINE * * */
         var disqus_identifier = '{{post.id}}';

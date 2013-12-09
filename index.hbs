@@ -10,10 +10,10 @@
 
     {{#foreach posts}}
 
-    <article class="preview">
+    <article class="preview" role="article" itemscope itemtype="http://schema.org/Article">
         <header>
-        <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
-        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></div>
+        <h1 class="post-title" itemprop="headline"><a href="{{url}}">{{{title}}}</a></h1>
+        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">{{date format="dddd, MMMM DD, YYYY"}}</time></div>
         </header>
         <section class="post-excerpt">
             <p>{{excerpt}}&hellip;</p>
