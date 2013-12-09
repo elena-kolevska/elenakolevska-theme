@@ -92,7 +92,7 @@ article.preview,
 a.archive-link,
 .article-nav {
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 900px;
   width: 90%;
 }
 #site-head img {
@@ -129,6 +129,13 @@ h2.blog-description {
   margin-bottom: 3em;
   padding: .5em 1em;
   line-height: 1.2em;
+  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  color: #95a5a6;
+}
+h1.post-title {
+  font-size: 2em;
 }
 header.article-header,
 header.page-header {
@@ -224,7 +231,8 @@ h1.blog-title a:hover {
 h2 {
   font-family: "Roboto Slab", "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   margin-top: 2em;
-  font-weight: 300;
+  font-size: 2.5em;
+  font-weight: 400;
   color: #151515;
 }
 section.post-content img {
