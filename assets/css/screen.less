@@ -297,9 +297,7 @@ footer {
     margin: 4em 0 0;
     padding: 2em 0;
     text-align: center;
-}
-
-    footer section {
+    section {
         font-family: @secondaryFontFamily;
         font-weight: 300;
         font-size: 18px;
@@ -308,12 +306,29 @@ footer {
         text-transform: uppercase;
         width: 90%;
     }
-
-footer.post-footer {
-    background: none;
-    border-top: 1px solid @borderColor;
-    margin-top: 1em;
+    &.post-footer {
+        background: none;
+        border-top: 1px solid @borderColor;
+        border-bottom: 1px solid @borderColor;
+        margin-top: 1em;
+    }
+    .social{
+        margin-bottom: 30px;
+        a{
+            color: @linkColorHover;
+            font-size: 1.5em;
+        }
+    }
 }
+
+//     footer 
+
+// footer.post-footer {
+//     background: none;
+//     border-top: 1px solid @borderColor;
+//     border-bottom: 1px solid @borderColor;
+//     margin-top: 1em;
+// }
 
 /* === Navigation and Pagination === */
 

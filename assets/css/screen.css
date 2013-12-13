@@ -273,7 +273,15 @@ footer section {
 footer.post-footer {
   background: none;
   border-top: 1px solid #ecf0f1;
+  border-bottom: 1px solid #ecf0f1;
   margin-top: 1em;
+}
+footer .social {
+  margin-bottom: 30px;
+}
+footer .social a {
+  color: #02090e;
+  font-size: 1.5em;
 }
 /* === Navigation and Pagination === */
 nav {
